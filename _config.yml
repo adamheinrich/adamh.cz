@@ -1,0 +1,40 @@
+# Setup
+title:               Adam Heinrich
+tagline_en:          "Programmer, electrical engineering student and maker"
+tagline_cz:          "Programování, elektronika a všechno mezi tím"
+url:                 http://adamheinrich.com
+baseurl:             ""
+
+# Permalinks
+permalink:           /blog/:year/:month/:title
+relative_permalinks: true
+
+# Posts
+excerpt_separator:   <!--more-->
+paginate:            5
+paginate_path:       "/blog/page:num/"
+
+# Assets
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# Local server
+hostname:            adamheinrich.local
+port:                80
+
+# Social networks
+disqus:
+  username:          adamheinrich
+
+twitter:
+  username:          adamheinrich
+
+github:
+  repository:        https://github.com/adamheinrich/adamheinrich.com
+
+# About & contact
+author:
+  name:              Adam Heinrich
+  url:               https://adamheinrich.com
+  email:             adam@adamh.cz

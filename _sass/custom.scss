@@ -1,0 +1,161 @@
+/*
+ Theme Name:   blog.AdamHeinrich.com (Publish Child)
+ Theme URI:    http://blog.adamheinrich.com
+ Description:  Publish Child Theme for blog.adamheinrich.com
+ Author:       adamheinrich.com
+ Author URI:   http://adamheinrich.com
+ Template:     publish
+ Version:      1.0.0
+ Tags:         light, two-columns, left-sidebar, responsive-layout
+ Text Domain:  publish-child
+*/
+
+/*
+header, #secondary {
+	text-align: right;
+}
+*/
+
+
+/*
+a, ul.menu a, .tagcloud a, a:visited {
+	color: #0f82f5;
+}*/
+
+
+#disqus_thread {
+	margin-top: 40px;
+	/*border-top: 1px solid #ddd;
+	padding-top: 20px;*/
+}
+
+.fa-rss, .fa-rss-sign, .rss {
+	color: #FA9B39;
+}
+
+.fa-twitter, .fa-twitter-sign, .twitter {
+	color: #00A0D1;
+}
+
+.fa-facebook, .fa-facebook-sign, .facebook {
+	color: #3B5998;
+}
+
+.fa-linkedin, .fa-linkedin-sign, .linkedin {
+	color: #007bb6;
+}
+
+.fa-github, .fa-github-sign, .github {
+	color: #151013;
+}
+
+.about-social {
+	text-align: center;
+}
+
+.about-social a {
+	margin: 0 8px;
+	text-decoration: none;
+}
+
+.entry-source {
+	margin-bottom: 20px;
+}
+
+.grey {
+	color: #999;
+	margin-top: 30px;
+}
+
+.grey a {
+	color: #999;
+}
+
+.entry-content img.alignnone, .entry-content img.alignleft, .entry-content img.alignright, .entry-content img.aligncenter {
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+
+/*
+img#wpstats { 
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+*/
+
+/* Project Gallery */
+.project {
+	width: 160px;
+	float: left;
+	text-align: center;
+	font-size: smaller;
+	margin: 15px 5px;
+}
+
+.project a {
+	color: #222;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.project small {
+	margin-left: 5px;
+	font-size: 70%;
+	color: #777;
+}
+
+.project img {
+	width: 110px;
+	height: 110px;
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 0 auto;
+}
+
+.project a:hover img {
+	border: 1px solid #1E8AB6;
+}
+
+/* Contact page */
+.fa-envelope-o, .fa-phone, .fa-map-marker, .fa-legal {
+	color: #999;
+}
+
+/*
+.page-id-13 strong {
+	display: none;
+}
+*/
+
+#menu-social-icons a {
+	font-size: larger;
+}
+
+#menu-social-icons .icon-fixed-width {
+	color: #fff;
+}
+
+.no-grav {
+	width: 100px;
+}
+
+/* The widget comes from http://codingtips.kanishkkunal.in/share-buttons-jekyll/ */
+.share-page {
+    text-align: center;
+    background: #16a085;
+    color: #efefef;
+    padding: 8px 15px;
+    border-radius: 5px;
+    margin: 1.5  0;
+
+    a {
+        font-weight: 700;
+        color: #fff;
+        margin-left: 10px;
+
+        &:hover {
+            border-bottom: 1px dashed #fff;
+        }
+    }
+}

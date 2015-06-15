@@ -1,0 +1,10 @@
+# Generated files
+_site
+.sass-cache
+
+# Editor folders
+.DS_Store
+Thumbs.db
+
+# Special pages
+fakturacni-udaje/index.html

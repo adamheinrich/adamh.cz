@@ -1,0 +1,27 @@
+<head>
+    <meta charset="UTF-8">
+    <link href="http://gmpg.org/xfn/11" rel="profile">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    {% if page.noindex %}
+    <meta name="robots" content="noindex, nofollow">
+    {% endif %}
+    
+    {% if page.title %}    
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% else %}
+    {% if page.language == "cz" %}
+    <title>{{ site.title }} - {{ site.tagline_cz }}</title>
+    {% else %}
+    <title>{{ site.title }} - {{ site.tagline_en }}</title>
+    {% endif %}
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+    
+    <link rel="apple-touch-icon-precomposed" sizes="128x128" href="{{ site.baseurl }}/public/apple-touch-icon-precomposed.png">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/public/favicon.png">
+
+    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
+</head>

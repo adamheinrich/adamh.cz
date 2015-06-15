@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<article class="post">
+    <header class="entry-header">
+        <h1 class="post-title">{{ page.title }}</h1>
+    </header>
+
+    <div class="entry-content">
+        {{ content }}
+    </div>
+
+    <footer class="entry-meta">
+        Posted on <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>.
+        Bookmark the <a href="{{ site.baseurl }}{{ page.url }}">permalink</a>.
+    </footer>
+</article>
+
+<div class="share-page">
+    Share this on &rarr; 
+    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}&amp;via={{ site.twitter.username }}&amp;related={{ site.twitter.username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+    <a href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Facebook">Facebook</a>
+    <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
+</div>
+
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = '{{ site.disqus.username }}';
+    {% if page.disqusIdentifier %}
+    var disqus_identifier = '{{ page.disqusIdentifier }}';
+    {% endif %}
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>

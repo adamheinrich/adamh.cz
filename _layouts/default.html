@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+{% if page.language == "cz" %}
+<html lang="cs">
+{% else %}
+<html lang="en">
+{% endif %}
+
+  {% include head.html %}
+
+  <body>
+    <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+        <a class="site-logo" href="{{ site.baseurl }}/" title="Adam Heinrich" rel="home">
+          <img class="no-grav" src="{{ site.baseurl }}/public/adam.jpg" height="128" width="128" alt="Adam Heinrich" />
+        </a>
+        
+        <hgroup>
+          <h1 class="site-title"><a href="{{ site.baseurl }}/" title="{{ site.title }}" rel="home">{{ site.title }}</a></h1>
+          <p class="site-description">
+            {% if page.language == "cz" %}
+            {{ site.tagline_cz }}
+            (<a href="http://adamheinrich.com">English</a>)
+            {% else %}
+            {{ site.tagline_en }}
+            (<a href="http://adamh.cz">Česky</a>)
+            {% endif %}
+          </p>
+        </hgroup>
+
+        <nav role="navigation" class="main-navigation ">
+          <h1 class="assistive-text">Menu</h1>
+          <div class="assistive-text skip-link">
+            <a href="#content" title="Skip to content">Skip to content</a>
+          </div>
+
+          <div class="menu-main-menu-container">
+            <ul id="menu-main-menu" class="menu">
+            {% if page.language == "cz" %}
+              <li><a href="/">Domů</a></li>
+              <li><a href="http://adamheinrich.com/blog/">Blog</a></li>
+              <li><a href="{{ site.baseurl }}/kontakt/">Kontakt</a></li>
+            {% else %}
+              <li><a href="/">Home</a></li>
+              <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
+              <li><a href="{{ site.baseurl }}/contact/">Contact</a></li>
+            {% endif %}
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div id="main" class="site-main">
+        <div id="primary" class="content-area">
+          <div id="content" class="site-content" role="main">
+            {{ content }}
+          </div>
+        </div>
+
+        <div id="secondary" class="widget-area" role="complementary">
+          <aside id="text-5" class="widget widget_text">
+            <div class="textwidget">
+              <div id="menu-social-icons">
+                <a href="https://twitter.com/adamheinrich" class="fa-stack fa-lg twitter" title="Twitter">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-stack-1x fa-inverse fa-twitter"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/adamheinrich" class="fa-stack fa-lg linkedin" title="LinkedIn">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-stack-1x fa-inverse fa-linkedin"></i>
+                </a>
+
+                <a href="https://github.com/adamheinrich" class="fa-stack fa-lg github" title="Github">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-stack-1x fa-inverse fa-github"></i>
+                </a>
+
+                <a href="http://adamheinrich.com/atom.xml" class="fa-stack fa-lg rss" title="RSS Channel">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-stack-1x fa-inverse fa-rss"></i>
+                </a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <footer id="colophon" class="site-footer" role="contentinfo">
+        <div class="site-info">
+          <i class="fa fa-cog"></i> 2007-{{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}/">Adam Heinrich</a>.
+
+          {% if page.language == "cz" %}
+          Zobrazit <a href="{{ site.github.repository }}">zdrojový kód</a>.
+          <a href="http://adamheinrich.com">English</a>
+          {% else %}
+          Browse <a href="{{ site.github.repository }}">source code</a>.
+          <a href="http://adamh.cz">Česky</a>
+          {% endif %}
+        </div>
+      </footer>
+    </div>
+
+    {% if page.language == "cz" %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-64107930-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% else %}
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-64107930-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    {% endif %}      
+  </body>
+</html>
