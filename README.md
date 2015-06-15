@@ -26,4 +26,4 @@ Thank you!
 
 ## License
 
-Seet the [LICENSE.md](LICENSE.md) file.
+See the [LICENSE.md](LICENSE.md) file.
