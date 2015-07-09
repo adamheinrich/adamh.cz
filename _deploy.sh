@@ -3,8 +3,8 @@
 ##
 # Configuration options
 ##
-CZ_BUCKET='s3://adamh.cz/'
-EN_BUCKET='s3://adamheinrich.com/'
+CZ_BUCKET='s3://www.adamh.cz/'
+EN_BUCKET='s3://www.adamheinrich.com/'
 SITE_DIR='_site/'
 
 ##
