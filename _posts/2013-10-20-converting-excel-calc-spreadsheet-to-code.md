@@ -37,8 +37,6 @@ To illustrate the usage I created <a href="http://dir.adamheinrich.com/spreadshe
 <img class="alignnone" alt="Resistive divider spreadsheet" src="{{ site.baseurl }}/public/img/converting-excel-calc-spreadsheet-to-code/resistive_divider_spreadsheet_thumb.png" width="500">
 </a>
 
-{* *}
-
 Of course this is a trivial task but I couldn't think up anything better that wouldn't take long minutes to create (Excel calculations aren't my style, I use it just for painting tables). Many thanks to Wikipedia for the <a href="http://en.wikipedia.org/wiki/File:Resistive_divider.png">File:Resistive_divider.png</a>.
 
 For the conversion just download <a href="http://dir.adamheinrich.com/spreadsheet_to_code/SpreadsheetToCode.jar">SpreadsheetToCode.jar</a> and run it:
