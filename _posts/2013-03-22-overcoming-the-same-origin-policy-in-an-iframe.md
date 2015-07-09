@@ -50,8 +50,8 @@ This page contains simple script which loads page's content, replaces relative l
 
 This <a href="http://dir.adamheinrich.com/same-origin-hack-iframe/test.html">little example</a> shows the whole thing in action.
 
-<a href="{{ site.baseurl }}/public/img/iframe_hack_screenshot.png">
-<img src="{{ site.baseurl }}/public/img/thumb/iframe_hack_screenshot.png" alt="Dealing with the same-origin policy" width="300" height="157" class="alignnone" style="border: 1px solid #ccc;">
+<a href="{{ site.baseurl }}/public/img/overcoming-the-same-origin-policy-in-an-iframe/iframe_hack_screenshot.png">
+<img src="{{ site.baseurl }}/public/img/overcoming-the-same-origin-policy-in-an-iframe/iframe_hack_screenshot_thumb.png" alt="Dealing with the same-origin policy" width="300" height="157" class="alignnone" style="border: 1px solid #ccc;">
 </a>
 
 It might be useful to remove Google Analytics code and some other stuff.

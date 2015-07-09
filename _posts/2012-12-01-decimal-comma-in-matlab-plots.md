@@ -7,8 +7,8 @@ disqusIdentifier: "73 http:\\/\\/frommyplayground.com\\/?p=73"
 
 A lot of languages (not only the European ones) use <strong>decimal comma</strong> instead decimal point to separate the whole and the fractional part of a number in decimal form. <strong>Matlab</strong> (like other programs) uses decimal point for this purpose. This is okay when using it for computations but it is better to use decimal comma in graphs embedded in documents written in some European language.
 
-<a href="{{ site.baseurl }}/public/img/decimal_comma_with.png">
-<img class="alignnone" title="A Matlab graph with decimal commas" alt="" src="{{ site.baseurl }}/public/img/decimal_comma_with.png" width="318" height="239">
+<a href="{{ site.baseurl }}/public/img/decimal-comma-in-matlab-plots/decimal_comma_with.png">
+<img class="alignnone" title="A Matlab graph with decimal commas" alt="" src="{{ site.baseurl }}/public/img/decimal-comma-in-matlab-plots/decimal_comma_with.png" width="318" height="239">
 </a>
 
 
@@ -118,8 +118,8 @@ labels{n} = '';
 
 The plot will then change to:
 
-<a href="{{ site.baseurl }}/public/img/decimal_comma_without.png">
-<img class="alignnone" title="A Matlab graph with decimal commas" alt="" src="{{ site.baseurl }}/public/img/decimal_comma_without.png" width="318" height="239">
+<a href="{{ site.baseurl }}/public/img/decimal-comma-in-matlab-plots/decimal_comma_without.png">
+<img class="alignnone" title="A Matlab graph with decimal commas" alt="" src="{{ site.baseurl }}/public/img/decimal-comma-in-matlab-plots/decimal_comma_without.png" width="318" height="239">
 </a>
 
 Get the whole code from my <a href="https://github.com/adamheinrich/decimal-comma">Github</a>!

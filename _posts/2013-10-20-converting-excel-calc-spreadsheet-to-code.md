@@ -33,9 +33,11 @@ because C10 mustn't be used before its declaration/definition.
 
 To illustrate the usage I created <a href="http://dir.adamheinrich.com/spreadsheet_to_code/resistive_divider.ods">simple spreadsheet</a> (the original complex spreadsheet can not be disclosed) for calculating resistive voltage divider. It calculates <em>V2</em> from <em>V1</em>, <em>R1</em> and <em>R2</em>:
 
-<a href="{{ site.baseurl }}/public/img/resistive_divider_spreadsheet.png">
-<img class="alignnone" alt="Resistive divider spreadsheet" src="{{ site.baseurl }}/public/img/thumb/resistive_divider_spreadsheet.png" width="500">
+<a href="{{ site.baseurl }}/public/img/converting-excel-calc-spreadsheet-to-code/resistive_divider_spreadsheet.png">
+<img class="alignnone" alt="Resistive divider spreadsheet" src="{{ site.baseurl }}/public/img/converting-excel-calc-spreadsheet-to-code/resistive_divider_spreadsheet_thumb.png" width="500">
 </a>
+
+{* *}
 
 Of course this is a trivial task but I couldn't think up anything better that wouldn't take long minutes to create (Excel calculations aren't my style, I use it just for painting tables). Many thanks to Wikipedia for the <a href="http://en.wikipedia.org/wiki/File:Resistive_divider.png">File:Resistive_divider.png</a>.
 
