@@ -159,3 +159,17 @@ img#wpstats {
         }
     }
 }
+
+.site-main article, .posts article:last-child {
+    border: none;
+}
+
+.posts article {
+    border-bottom: 1px solid #ddd;
+}
+
+#colophon {
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+    text-align: center;
+}
