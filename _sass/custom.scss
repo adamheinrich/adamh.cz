@@ -119,6 +119,45 @@ img#wpstats {
     }
 }
 
+.older-projects {
+    .project {
+        border-bottom: 1px solid #ddd;
+        padding: 20px 0;
+
+        p {
+            margin: 0;
+        }
+
+        strong a {
+            color: #222;
+            text-decoration: none;
+            font-size: 110%;
+        }
+
+        img {
+            width: 110px;
+            height: 110px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            float: right;
+
+            margin: 10px;
+            margin-right: 0;
+        }
+
+        .aw, .aw a {
+            font-style: italic;
+            color: #999;
+        }
+
+        a:hover img {
+            border: 1px solid #1E8AB6;
+        }
+    }
+
+    .project:last-child {
+        border: none;
+    }
 }
 
 /* Contact page */
