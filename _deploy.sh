@@ -78,10 +78,12 @@ if [[ "$1" = "en" ]]; then
     rm -rf "$SITE_DIR/fakturacni-udaje"
     rm -rf "$SITE_DIR/index_cz.html"
     rm -rf "$SITE_DIR/404_cz.html"
+    rm -rf "$SITE_DIR/projekty"
 else
     rm -rf "$SITE_DIR/contact"
     rm -rf "$SITE_DIR/blog"
     rm -rf "$SITE_DIR/public/img"
+    rm -rf "$SITE_DIR/projects"
     mv "$SITE_DIR/index_cz.html" "$SITE_DIR/index.html"
     mv "$SITE_DIR/404_cz.html" "$SITE_DIR/404.html"
 fi
