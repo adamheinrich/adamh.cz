@@ -2,7 +2,7 @@
 _site
 .sass-cache
 
-# Editor folders
+# Operating system's rubbish
 .DS_Store
 Thumbs.db
 
