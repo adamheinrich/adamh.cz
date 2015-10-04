@@ -20,8 +20,8 @@ sass:
   style:            :compressed
 
 # Local server
-hostname:            adamheinrich.local
-port:                80
+hostname:            localhost
+port:                4000
 
 # Social networks
 disqus:
