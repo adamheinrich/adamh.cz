@@ -6,7 +6,7 @@ url:                 http://www.adamheinrich.com
 baseurl:             ""
 
 # Permalinks
-permalink:           /blog/:year/:month/:title
+permalink:           /blog/:year/:month/:title/
 relative_permalinks: true
 
 # Posts
