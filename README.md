@@ -4,13 +4,13 @@ Source code of my personal websites [adamheinrich.com](http://adamheinrich.com) 
 ## Usage
 Just run
 
-    jekyll serve --watch
+    make serve
 
 and head to [localhost](http://localhost) to see the site in action.
 
 To build everything and push to Amazon S3, run
 
-    ./_deploy.sh all
+    make all
 
 The script will gzip and copy contents of the _site directory. Some files are renamed and some deleted (the CZ version does not contain blog and english pages).
 
