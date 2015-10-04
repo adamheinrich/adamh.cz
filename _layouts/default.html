@@ -19,10 +19,10 @@
           <p class="site-description">
             {% if page.language == "cz" %}
             {{ site.tagline_cz }}
-            (<a href="http://www.adamheinrich.com">English</a>)
+            (<a href="{{ site.url }}">English</a>)
             {% else %}
             {{ site.tagline_en }}
-            (<a href="http://www.adamh.cz">Česky</a>)
+            (<a href="{{ site.url_cz }}">Česky</a>)
             {% endif %}
           </p>
         </hgroup>
@@ -37,7 +37,7 @@
             <ul id="menu-main-menu" class="menu">
             {% if page.language == "cz" %}
               <li><a href="/">Domů</a></li>
-              <li><a href="http://www.adamheinrich.com/blog/">Blog</a></li>
+              <li><a href="{{ site.url }}/blog/">Blog</a></li>
               <li><a href="{{ site.baseurl }}/kontakt/">Kontakt</a></li>
             {% else %}
               <li><a href="/">Home</a></li>
@@ -91,10 +91,10 @@
 
           {% if page.language == "cz" %}
           Zobrazit <a href="{{ site.github.repository }}">zdrojový kód</a>.
-          <a href="http://www.adamheinrich.com">English</a>
+          <a href="{{ site.url }}">English</a>
           {% else %}
           Browse <a href="{{ site.github.repository }}">source code</a>.
-          <a href="http://www.adamh.cz">Česky</a>
+          <a href="{{ site.url_cz }}">Česky</a>
           {% endif %}
         </div>
       </footer>

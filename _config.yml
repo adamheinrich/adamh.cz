@@ -2,7 +2,8 @@
 title:               Adam Heinrich
 tagline_en:          "Programmer, electrical engineering student and maker"
 tagline_cz:          "Programování, elektronika a všechno mezi tím"
-url:                 http://www.adamheinrich.com
+url:                 https://www.adamheinrich.com
+url_cz:              https://www.adamh.cz
 baseurl:             ""
 
 # Permalinks
