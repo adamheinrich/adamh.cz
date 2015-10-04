@@ -6,7 +6,7 @@ Just run
 
     make serve
 
-and head to [localhost](http://localhost) to see the site in action.
+and head to [localhost:4000](http://localhost:4000) to see the site in action.
 
 To build everything and push to Amazon S3, run
 
