@@ -1,7 +1,8 @@
 # Setup
 title:               Adam Heinrich
-tagline_en:          "Programmer, electrical engineering student and maker"
-tagline_cz:          "Programování, elektronika a všechno mezi tím"
+tagline_en:          "Embedded SW and HW developer"
+tagline_cz:          "Zakázkový vývoj firmware"
+
 url:                 https://www.adamheinrich.com
 url_cz:              https://www.adamh.cz
 baseurl:             ""
