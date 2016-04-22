@@ -9,13 +9,16 @@
 
   <body>
     <div id="page" class="hfeed site">
-      <header id="masthead" class="site-header" role="banner">
+      <header id="masthead" class="site-header{% if page.is_landing %} landing{% endif %}" role="banner">
+        {% if page.is_landing != true %}
         <a class="site-logo" href="{{ site.baseurl }}/" title="Adam Heinrich" rel="home">
           <img class="no-grav" src="{{ site.baseurl }}/public/adamh.png" height="160" width="128" alt="Adam Heinrich">
         </a>
-        
+        {% endif %}
+
         <hgroup>
           <h1 class="site-title"><a href="{{ site.baseurl }}/" title="{{ site.title }}" rel="home">{{ site.title }}</a></h1>
+          {% if page.is_landing != true %}
           <p class="site-description">
             {% if page.language == "cz" %}
             {{ site.tagline_cz }}
@@ -25,12 +28,17 @@
             (<a href="{{ site.url_cz }}">Česky</a>)
             {% endif %}
           </p>
+          {% endif %}
         </hgroup>
 
         <nav role="navigation" class="main-navigation ">
           <h1 class="assistive-text">Menu</h1>
           <div class="assistive-text skip-link">
+            {% if page.language == "cz" %}
+            <a href="#content" title="Přejít na obsah">Přejít na obsah</a>
+            {% else %}
             <a href="#content" title="Skip to content">Skip to content</a>
+            {% endif %}
           </div>
 
           <div class="menu-main-menu-container">
@@ -53,9 +61,34 @@
         <div id="primary" class="content-area">
           <div id="content" class="site-content" role="main">
             {{ content }}
+
+            {% if page.is_landing %}
+            <div id="menu-social-icons">
+              <a href="https://twitter.com/adamheinrich" class="fa-stack fa-lg twitter" title="Twitter">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stack-1x fa-inverse fa-twitter"></i>
+              </a>
+
+              <a href="https://linkedin.com/in/adamheinrich" class="fa-stack fa-lg linkedin" title="LinkedIn">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stack-1x fa-inverse fa-linkedin"></i>
+              </a>
+
+              <a href="https://github.com/adamheinrich" class="fa-stack fa-lg github" title="Github">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stack-1x fa-inverse fa-github"></i>
+              </a>
+
+              <a href="http://www.adamheinrich.com/atom.xml" class="fa-stack fa-lg rss" title="RSS Channel">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-stack-1x fa-inverse fa-rss"></i>
+              </a>
+            </div>
+            {% endif %}
           </div>
         </div>
 
+        {% if page.is_landing != true %}
         <div id="secondary" class="widget-area" role="complementary">
           <aside id="text-5" class="widget widget_text">
             <div class="textwidget">
@@ -83,8 +116,10 @@
             </div>
           </aside>
         </div>
+        {% endif %}
       </div>
 
+      {% if page.is_landing != true %}
       <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="site-info">
           <i class="fa fa-cog"></i> 2007-{{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}/">Adam Heinrich</a>.
@@ -98,6 +133,7 @@
           {% endif %}
         </div>
       </footer>
+      {% endif %}
     </div>
 
     {% if page.language == "cz" %}
