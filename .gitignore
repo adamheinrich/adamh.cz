@@ -8,3 +8,7 @@ Thumbs.db
 
 # Special pages
 fakturacni-udaje/index.html
+
+# Sublime
+*.sublime-project
+*.sublime-workspace

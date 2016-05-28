@@ -22,6 +22,9 @@ clean:
 clear_en:
 	$(eval BUCKET := $(EN_BUCKET))
 
+	rm -rf $(SITE_DIR)/*.sublime-workspace
+	rm -rf $(SITE_DIR)/*.sublime-project
+
 	rm -rf $(SITE_DIR)/Makefile
 	rm -rf $(SITE_DIR)/README.md
 	rm -rf $(SITE_DIR)/LICENSE.md
@@ -34,6 +37,9 @@ clear_en:
 
 clear_cz:
 	$(eval BUCKET := $(CZ_BUCKET))
+
+	rm -rf $(SITE_DIR)/*.sublime-workspace
+	rm -rf $(SITE_DIR)/*.sublime-project
 
 	rm -rf $(SITE_DIR)/Makefile
 	rm -rf $(SITE_DIR)/README.md
