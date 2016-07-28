@@ -97,7 +97,7 @@ registers:
 
   - ``xPSR`` to ``0x01000000`` (the defaul value)
   - ``PC`` to the handler function
-  - ``xPSR`` to ``0xFFFFFFFD`` (EXC_RETURN - unprivileged thread mode with the
+  - ``LR`` to ``0xFFFFFFFD`` (EXC_RETURN - unprivileged thread mode with the
     Process Stack)
 
 The actual function [os_task_init][6] stores values for registers ``r0-r12`` as
