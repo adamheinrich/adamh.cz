@@ -91,8 +91,9 @@ element according to C language specification.
 ## Task Initialization
 
 Each task is defined by its handler function and stack. The initialization phase
-of task's stack must ensure that the first 32 bytes form a valid exception
-frame. It is neccessary to store at least the default value of three registers:
+of task's stack must ensure that the first 64 bytes (16 words) form a valid
+exception frame. It is neccessary to store at least the default value of three
+registers:
 
   - ``xPSR`` to ``0x01000000`` (the defaul value)
   - ``PC`` to the handler function
