@@ -12,7 +12,7 @@ The same approach is used by many RTOSes and is well described in
 [The Definitive Guide to ARM® Cortex®-M0 and Cortex-M0+ Processors][2] by
 Joseph Yiu.
 
-![Round-robin scheduler][intro]
+[![Round-robin scheduler][intro]][intro]
 
 <!--more-->
 
@@ -55,25 +55,25 @@ The context switch routine has to:
 
 Exception frame saved by the NVIC hardware onto stack:
 
-![Exception frame saved by NVIC][stack_nvic]
+[![Exception frame saved by NVIC][stack_nvic]][stack_nvic]
 
 Registers saved by the software:
 
-![Registers saved by SW][stack_sw]
+[![Registers saved by SW][stack_sw]][stack_sw]
 
 ## Performing the Context Switch
 
 The context switch could be performed by the ``SysTick_Handler`` with a SysTick
 timer configured to fire interrupts periodically:
 
-![Context switch performed by SysTick][systick_only]
+[![Context switch performed by SysTick][systick_only]][systick_only]
 
 This approach would however not work with other interrupts (peripheral interrupt
 for example). The ``SysTick_Handler`` would stack registers affected by the
 peripheral IRQ handler and unstack task's registers, resulting in undefined
 behavior of both tasks and peripheral interrupt handler:
 
-![Context switch performed by SysTick - problem with IRQ][systick_irq_problem]
+[![Context switch performed by SysTick - problem with IRQ][systick_irq_problem]][systick_irq_problem]
 
 The solution is simple - the [SysTick_Handler][3] with the highest priority
 only selects the next task to be run and triggers PendSV interrupt.
@@ -81,7 +81,7 @@ The [PendSV_Handler][4] with the lowest priority performs the actual
 context switch once all interrupt requests with higher priority have been
 handled:
 
-![Context switch scheduled by SysTick and performed by PendSV][systick_pendsv]
+[![Context switch scheduled by SysTick and performed by PendSV][systick_pendsv]][systick_pendsv]
 
 The ``PendSV_Handler`` is written in pure assembly. The code relies on a fact
 that the task's stack pointer is the first element of the [os_task_t][5]
