@@ -97,10 +97,11 @@ registers:
 
   - ``xPSR`` to ``0x01000000`` (the defaul value)
   - ``PC`` to the handler function
-  - ``LR`` to ``0xFFFFFFFD`` (EXC_RETURN - unprivileged thread mode with the
-    Process Stack)
+  - ``LR`` to a [function][6] to be called when the handler function finishes
+    (otherwise the CPU would jump to invalid location, causing HardFault or
+    undefined behavior)
 
-The actual function [os_task_init][6] stores values for registers ``r0-r12`` as
+The actual function [os_task_init][7] stores values for registers ``r0-r12`` as
 well for debugging purposes.
 
 ## Startup
@@ -113,26 +114,26 @@ As the microcontroller starts in Privileged Thread Mode with Main Stack it is
 neccessary to switch to Unprivileged mode with Process Stack. This is done by
 writing to the ``CONTROL`` register followed by ``ISB`` instruction.
 
-The [os_start][7] function is written without inline assembly thanks to
+The [os_start][8] function is written without inline assembly thanks to
 functions and intrinsics provided by the CMSIS library.
 
 ## Example
 
-An [example][8] runs three tasks (which are switched every second). All tasks
+An [example][9] runs three tasks (which are switched every second). All tasks
 blink the onboard LED with different frequency.
 
-The example can be run on STM32F030R8 Nucleo board and requires [STM32Cube][9]
-software pack which has to be present in the [lib][10] directory.
+The example can be run on STM32F030R8 Nucleo board and requires [STM32Cube][10]
+software pack which has to be present in the [lib][11] directory.
 
 The provided Makefile requires GCC compiler and OpenOCD. See
-[README][11] for more information about compilation and flashing.
+[README][12] for more information about compilation and flashing.
 
 ## Compatibility
 
 The SysTick timer and Privileged mode are optional features of the ARMv6-M
 architecture. They are however supported by vast majority of microcontrollers.
 
-The code relies on standard [CMSIS library][12] by ARM which is usually
+The code relies on standard [CMSIS library][13] by ARM which is usually
 distributed by microcontroller vendors. The library provides functions and
 intrinsics for accessing features of the ARM Cortex-M core.
 
@@ -141,13 +142,14 @@ intrinsics for accessing features of the ARM Cortex-M core.
 [3]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L104
 [4]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os_pendsv_handler.s
 [5]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L8
-[6]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L40
-[7]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L82
-[8]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/examples/stm32f030x8/main.c
-[9]: http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897
-[10]: https://github.com/adamheinrich/os.h/tree/blog_2016_07/examples/lib
-[11]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/examples/stm32f030x8
-[12]: http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php
+[6]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L27
+[7]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L40
+[8]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L82
+[9]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/examples/stm32f030x8/main.c
+[10]: http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897
+[11]: https://github.com/adamheinrich/os.h/tree/blog_2016_07/examples/lib
+[12]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/examples/stm32f030x8
+[13]: http://www.arm.com/products/processors/cortex-m/cortex-microcontroller-software-interface-standard.php
 
 [intro]: {{ site.baseurl }}/public/img/context-switch-on-the-arm-cortex-m0/os_intro.png
 [stack_nvic]: {{ site.baseurl }}/public/img/context-switch-on-the-arm-cortex-m0/os_stack_nvic.png
