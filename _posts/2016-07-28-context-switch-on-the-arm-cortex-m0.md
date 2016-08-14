@@ -138,11 +138,11 @@ intrinsics for accessing features of the ARM Cortex-M core.
 
 [1]: https://github.com/adamheinrich/os.h/tree/blog_2016_07
 [2]: http://store.elsevier.com/The-Definitive-Guide-to-ARM%C2%AE-Cortex%C2%AE-M0-and-Cortex-M0+-Processors/Joseph-Yiu/isbn-9780128032770/
-[3]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L96
+[3]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L104
 [4]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os_pendsv_handler.s
 [5]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L8
-[6]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L32
-[7]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L74
+[6]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L40
+[7]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/src/os.c#L82
 [8]: https://github.com/adamheinrich/os.h/blob/blog_2016_07/examples/stm32f030x8/main.c
 [9]: http://www.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32cube-embedded-software.html?querycriteria=productId=LN1897
 [10]: https://github.com/adamheinrich/os.h/tree/blog_2016_07/examples/lib
