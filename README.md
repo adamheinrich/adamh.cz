@@ -28,6 +28,7 @@ and some deleted (the CZ version does not contain blog and english pages).
    by Xavier Decuyper
  * [Share buttons widget](http://codingtips.kanishkkunal.in/share-buttons-jekyll/)
    by Kanishk Kunal
+ * [Cookie Consent](https://github.com/insites/cookieconsent) by Silktide Ltd
 
 Thank you!
 
