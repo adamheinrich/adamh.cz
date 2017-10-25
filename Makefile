@@ -31,7 +31,7 @@ clear_en:
 
 	rm -rf $(SITE_DIR)/kontakt
 	rm -rf $(SITE_DIR)/fakturacni-udaje
-	rm -rf $(SITE_DIR)/index_cz.html
+	rm -rf $(SITE_DIR)/cz
 	rm -rf $(SITE_DIR)/404_cz.html
 	rm -rf $(SITE_DIR)/projekty
 
@@ -50,7 +50,7 @@ clear_cz:
 	rm -rf $(SITE_DIR)/public/img
 	rm -rf $(SITE_DIR)/projects
 
-	mv $(SITE_DIR)/index_cz.html $(SITE_DIR)/index.html
+	mv $(SITE_DIR)/cz/index.html $(SITE_DIR)/index.html
 	mv $(SITE_DIR)/404_cz.html $(SITE_DIR)/404.html
 
 en: build clear_en upload

@@ -9,7 +9,6 @@ baseurl:             ""
 
 # Permalinks
 permalink:           /blog/:year/:month/:title/
-relative_permalinks: true
 
 # Posts
 excerpt_separator:   <!--more-->
@@ -40,3 +39,5 @@ author:
   name:              Adam Heinrich
   url:               https://adamheinrich.com
   email:             adam@adamh.cz
+
+gems:                [jekyll-paginate]
