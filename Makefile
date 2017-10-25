@@ -17,6 +17,7 @@ build:
 	-exec gzip -9 -n {} \; -exec mv {}.gz {} \;
 
 clean:
+	jekyll clean
 	rm -rf $(SITE_DIR)
 
 clear_en:
