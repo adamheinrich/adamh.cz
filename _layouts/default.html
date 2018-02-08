@@ -22,10 +22,8 @@
           <p class="site-description">
             {% if page.language == "cz" %}
             {{ site.tagline_cz }}
-            (<a href="{{ site.url }}">English</a>)
             {% else %}
             {{ site.tagline_en }}
-            (<a href="{{ site.url_cz }}">Česky</a>)
             {% endif %}
           </p>
           {% endif %}
@@ -59,24 +57,6 @@
         <div id="primary" class="content-area">
           <div id="content" class="site-content" role="main">
             {{ content }}
-
-            {% if page.is_landing %}
-              <a href="https://linkedin.com/in/adamheinrich" class="fa-stack fa-lg linkedin" title="LinkedIn">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-stack-1x fa-inverse fa-linkedin"></i>
-              </a>
-
-              <a href="https://github.com/adamheinrich" class="fa-stack fa-lg github" title="Github">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-stack-1x fa-inverse fa-github"></i>
-              </a>
-
-              <a href="http://www.adamheinrich.com/atom.xml" class="fa-stack fa-lg rss" title="RSS Channel">
-                <i class="fa fa-circle fa-stack-2x"></i>
-                <i class="fa fa-stack-1x fa-inverse fa-rss"></i>
-              </a>
-            </div>
-            {% endif %}
           </div>
         </div>
 
