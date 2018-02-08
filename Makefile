@@ -30,8 +30,6 @@ clear_en:
 	rm -rf $(SITE_DIR)/README.md
 	rm -rf $(SITE_DIR)/LICENSE.md
 
-	rm -rf $(SITE_DIR)/kontakt
-	rm -rf $(SITE_DIR)/fakturacni-udaje
 	rm -rf $(SITE_DIR)/cz
 	rm -rf $(SITE_DIR)/404_cz.html
 	rm -rf $(SITE_DIR)/projekty
@@ -46,7 +44,6 @@ clear_cz:
 	rm -rf $(SITE_DIR)/README.md
 	rm -rf $(SITE_DIR)/LICENSE.md
 
-	rm -rf $(SITE_DIR)/contact
 	rm -rf $(SITE_DIR)/blog
 	rm -rf $(SITE_DIR)/public/img
 	rm -rf $(SITE_DIR)/projects
