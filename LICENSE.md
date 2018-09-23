@@ -3,7 +3,6 @@
 This file contains license information for:
 
 - The actual content of the website
-- Deploy script
 - Poole
 - Font Awesome (SCSS)
 - Font Awesome (Fonts)
@@ -12,15 +11,11 @@ This file contains license information for:
 
 ## The actual content of the website
 
-All content of the website inside the _post/, public/img/ and public/projects directories by [Adam Heinrich](http://admheinrich.com) is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
-
-## Deploy script
-
-The _deploy.sh script is based on article [Enable gzip for Jekyll blogs on Amazon S3](http://www.savjee.be/2014/03/Jekyll-to-S3-deploy-script-with-gzip/) published by [Xavier Decuyper](http://www.savjee.be).
+All content of the website inside the `_post/`, `public/img/` and `public/projects/` directories by [Adam Heinrich](http://admheinrich.com) is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
 ## Poole
 
-SCSS files _sass/\_code.scss and _sass/\_synax.scss and the atom.xml file from the [Poole](http://getpoole.com) project by [Mark Otto](https://twitter.com/mdo) is licensed under the [MIT license](http://opensource.org/licenses/mit-license.html):
+SCSS files `_sass/_code.scss` and `_sass/_synax.scss` and the `atom.xml` file from the [Poole](http://getpoole.com) project by [Mark Otto](https://twitter.com/mdo) is licensed under the [MIT license](http://opensource.org/licenses/mit-license.html):
 
 ```
 Copyright (c) 2013 Mark Otto.

@@ -12,3 +12,6 @@ fakturacni-udaje/index.html
 # Sublime
 *.sublime-project
 *.sublime-workspace
+
+# Deploy script
+deploy.sh
