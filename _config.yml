@@ -1,10 +1,8 @@
 # Setup
 title:               Adam Heinrich
-tagline_en:          "Embedded SW &amp; HW"
-tagline_cz:          "Embedded SW &amp; HW"
+tagline:             "Embedded SW &amp; HW"
 
-url:                 https://www.adamheinrich.com
-url_cz:              https://www.adamh.cz
+url:                 https://www.adamh.cz
 baseurl:             ""
 
 # Permalinks
@@ -32,12 +30,12 @@ twitter:
   username:          adamheinrich
 
 github:
-  repository:        https://github.com/adamheinrich/adamheinrich.com
+  repository:        https://github.com/adamheinrich/adamh.cz
 
 # About & contact
 author:
   name:              Adam Heinrich
-  url:               https://adamheinrich.com
+  url:               https://www.adamh.cz
   email:             adam@adamh.cz
 
 gems:                [jekyll-paginate]

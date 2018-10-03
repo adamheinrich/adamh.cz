@@ -7,20 +7,16 @@
     {% if page.noindex %}
     <meta name="robots" content="noindex, nofollow">
     {% endif %}
-    
-    {% if page.title %}    
+
+    {% if page.title %}
     <title>{{ page.title }} - {{ site.title }}</title>
     {% else %}
-    {% if page.language == "cz" %}
-    <title>{{ site.title }} - {{ site.tagline_cz }}</title>
-    {% else %}
-    <title>{{ site.title }} - {{ site.tagline_en }}</title>
-    {% endif %}
+    <title>{{ site.title }} - {{ site.tagline }}</title>
     {% endif %}
 
     <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/public/cookieconsent.min.css">
-    
+
     <link rel="apple-touch-icon" href="{{ site.baseurl }}/public/apple-touch-icon.png">
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
 

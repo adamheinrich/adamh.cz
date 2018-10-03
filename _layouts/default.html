@@ -20,11 +20,7 @@
           <h1 class="site-title"><a href="{{ site.baseurl }}/" title="{{ site.title }}" rel="home">{{ site.title }}</a></h1>
           {% if page.is_landing != true %}
           <p class="site-description">
-            {% if page.language == "cz" %}
-            {{ site.tagline_cz }}
-            {% else %}
-            {{ site.tagline_en }}
-            {% endif %}
+            {{ site.tagline }}
           </p>
           {% endif %}
         </hgroup>
@@ -32,22 +28,13 @@
         <nav role="navigation" class="main-navigation ">
           <h1 class="assistive-text">Menu</h1>
           <div class="assistive-text skip-link">
-            {% if page.language == "cz" %}
-            <a href="#content" title="Přejít na obsah">Přejít na obsah</a>
-            {% else %}
             <a href="#content" title="Skip to content">Skip to content</a>
-            {% endif %}
           </div>
 
           <div class="menu-main-menu-container">
             <ul id="menu-main-menu" class="menu">
-            {% if page.language == "cz" %}
-              <li><a href="/">Domů</a></li>
-              <li><a href="{{ site.url }}/blog/">Blog</a></li>
-            {% else %}
               <li><a href="/">Home</a></li>
               <li><a href="{{ site.baseurl }}/blog/">Blog</a></li>
-            {% endif %}
             </ul>
           </div>
         </nav>
@@ -73,7 +60,7 @@
                   <i class="fa fa-stack-1x fa-inverse fa-linkedin"></i>
                 </a>
 
-                <a href="http://www.adamheinrich.com/atom.xml" class="fa-stack fa-lg rss" title="RSS Channel">
+                <a href="{{ site.url }}/atom.xml" class="fa-stack fa-lg rss" title="RSS Channel">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-stack-1x fa-inverse fa-rss"></i>
                 </a>
@@ -88,14 +75,7 @@
       <footer id="colophon" class="site-footer" role="contentinfo">
         <div class="site-info">
           <i class="fa fa-cog"></i> 2007-{{ site.time | date: '%Y' }} <a href="{{ site.baseurl }}/">Adam Heinrich</a>.
-
-          {% if page.language == "cz" %}
-          <a href="{{ site.github.repository }}">Zdrojový kód</a>.
-          <a href="{{ site.url }}">English</a>
-          {% else %}
           <a href="{{ site.github.repository }}">Source code</a>.
-          <a href="{{ site.url_cz }}">Česky</a>
-          {% endif %}
         </div>
       </footer>
       {% endif %}
@@ -103,7 +83,6 @@
 
     <script src="{{ site.baseurl }}/public/cookieconsent.min.js"></script>
 
-    {% if page.language != "cz" %}
     <script>
       window.cookieconsent.initialise({"palette":{"popup":{"background":"#383b75"},
       "button":{"background":"#f1d600"}},"content":{"message":
@@ -111,6 +90,5 @@
       "dismiss":"Got it!","link":"Learn more","href":
       "https://help.disqus.com/user-profile/use-of-cookies"}});
     </script>
-    {% endif %}
   </body>
 </html>

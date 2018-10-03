@@ -1,8 +1,8 @@
-# adamheinrich.com
+# adamh.cz
 
-Source code of my personal websites [adamheinrich.com](http://adamheinrich.com)
-and [adamh.cz](http://adamh.cz). I've used some great open source projects which
-was the main reason to make its source public.
+Source code of my personal website [adamh.cz](https://www.adamh.cz).
+I've used some great open source projects which was the main reason to make its
+source public.
 
 ## Usage
 
