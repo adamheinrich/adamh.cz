@@ -1,28 +1,3 @@
-/*
- Theme Name:   blog.AdamHeinrich.com (Publish Child)
- Theme URI:    http://blog.adamheinrich.com
- Description:  Publish Child Theme for blog.adamheinrich.com
- Author:       adamheinrich.com
- Author URI:   http://adamheinrich.com
- Template:     publish
- Version:      1.0.0
- Tags:         light, two-columns, left-sidebar, responsive-layout
- Text Domain:  publish-child
-*/
-
-/*
-header, #secondary {
-	text-align: right;
-}
-*/
-
-
-/*
-a, ul.menu a, .tagcloud a, a:visited {
-	color: #0f82f5;
-}*/
-
-
 #disqus_thread {
 	margin-top: 40px;
 	/*border-top: 1px solid #ddd;
@@ -75,14 +50,6 @@ a.github, a.github:visited {
 	border: 1px solid #ddd;
 	padding: 5px;
 }
-
-/*
-img#wpstats { 
-	width: 0px;
-	height: 0px;
-	overflow: hidden;
-}
-*/
 
 /* Project Gallery */
 .projects {
@@ -164,12 +131,6 @@ img#wpstats {
 .fa-envelope-o, .fa-phone, .fa-map-marker, .fa-legal {
 	color: #999;
 }
-
-/*
-.page-id-13 strong {
-	display: none;
-}
-*/
 
 #menu-social-icons a {
 	font-size: larger;
