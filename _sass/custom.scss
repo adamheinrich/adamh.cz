@@ -198,3 +198,21 @@ a.github, a.github:visited {
         margin-left: 0;
     }
 }
+
+.site-content {
+    ol, ul {
+        margin-left: 1em;
+    }
+
+    ul {
+        list-style: none; /* Remove default bullets */
+
+        li::before {
+            content: "\2022";
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+}
